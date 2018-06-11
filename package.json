@@ -1,0 +1,49 @@
+{
+  "name": "@guthega/mongo_receiver",
+  "version": "0.1.0",
+  "description": "MongoDB receiver for Guthega",
+  "main": "lib/mongo_receiver.js",
+  "scripts": {
+    "lint": "eslint ./src --ext .js",
+    "lint:fix": "eslint ./src --ext .js --fix",
+    "compile": "babel -d lib/ src/",
+    "test": "mocha --require babel-core/register test",
+    "coverage": "NODE_ENV=test nyc mocha",
+    "clean": "rimraf .nyc_output coverage lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guthega/mongo_receiver.git"
+  },
+  "keywords": [
+    "guthega",
+    "mongo",
+    "mongodb",
+    "receiver"
+  ],
+  "author": "Adam Schmidt <aschmidt1978@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guthega/mongo_receiver/issues"
+  },
+  "homepage": "https://github.com/guthega/mongo_receiver#readme",
+  "dependencies": {
+    "mongodb": "^3.0.10"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-istanbul": "^4.1.6",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
+    "rimraf": "^2.6.2",
+    "uuid": "^3.2.1"
+  }
+}

@@ -9,7 +9,7 @@ services:
   - mongodb
 before_script:
   - sleep 15
-  - mongo guthega --eval 'show collections;'
+  - mongo guthega --eval 'db.info'
 script:
   - yarn lint
   - yarn test

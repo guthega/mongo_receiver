@@ -6,8 +6,8 @@ const receiver = (receiverContext) => {
 
   log.debug('Mongo configuration', receiverContext.config);
 
-  const mongoClient = MongoClient.connect(url, connection)
-  const mongoDb = mongoClient.then(c => c.db())
+  const mongoClient = MongoClient.connect(url, connection);
+  const mongoDb = mongoClient.then(c => c.db());
 
   return (message, messageContext) => new Promise((res, rej) => {
     mongoDb

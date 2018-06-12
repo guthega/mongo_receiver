@@ -1,0 +1,10 @@
+{
+  "module": "@guthega/mongo_receiver",
+  "version": "0.1.0",
+  "properties": {
+    "collection": "guthega",
+    "url": "mongodb://localhost:27017/guthega",
+    "connection": {
+    }
+  }
+}
